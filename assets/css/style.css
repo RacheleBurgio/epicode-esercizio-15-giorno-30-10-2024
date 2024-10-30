@@ -160,6 +160,9 @@ h3 {
     padding-left: 20px;
     padding-right: 20px;
   }
+  ul {
+    align-items: center;
+  }
 
   li:nth-child(1) {
     height: 10%;
@@ -183,5 +186,27 @@ h3 {
     margin: 0px;
     width: 250px;
     height: auto;
+  }
+}
+
+@media screen and (min-width: 870px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  ul {
+    width: 25%;
+  }
+  li {
+    width: 50%;
+  }
+
+  main {
+    display: flex;
+    align-items: flex-end;
   }
 }
